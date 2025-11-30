@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+}
+
+header {
+  background-color: #242424;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-color: #eee;
+}
+
+.card-content {
+  padding: 15px 20px;
+}
+
+.card-content h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #000;
+}
+
+.card-content p {
+  color: #555;
+  font-size: 14px;
+  margin: 5px 0 10px;
+}
+
+.price {
+  margin-bottom: 10px;
+}
+
+.price .new {
+  color: #008000;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.price .old {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.btn {
+  background-color: #0066e0;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0052b3;
+}
+    </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEasy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ShopEasy</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.hJSOBO_p1O15KiQ0_AUdRgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="T-Shirt">
+      <div class="card-content">
+        <h3>Classic Cotton T-Shirt</h3>
+        <p>Soft, breathable cotton. Regular fit. Available in multiple colors.</p>
+        <div class="price">
+          <span class="new">₹799</span>
+          <span class="old">₹1,499</span>
+        </div>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

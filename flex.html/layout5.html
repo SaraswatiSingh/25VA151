@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unit 3</title>
+    <style>
+       body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       main{
+        width: 1200px;
+        height:880 ;
+        background-color: blanchedalmond;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       }
+       #hdr_top,#hdr,#container,#ftr{
+        background-color: rgb(235, 163, 193);
+        height: 150px;
+
+       }
+       #container{
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+
+       }
+       #left,#right{
+        flex-grow: 1;background-color: aquamarine;
+       }
+       #centre{
+        flex-grow: 2;background-color: beige;
+       }
+       #hdr_top{
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        text-align: center;
+        align-items: center;
+        line-height: 150px;
+
+       }
+       #hdr_top_left{
+        height: 150px;
+        flex-grow: 1;
+        background-color: rgb(0, 217, 255);
+       }
+       #hdr_top_right{
+        flex-grow: 2;
+        background-color: rgb(211, 240, 176);
+
+       }
+       #hdr_top_header{
+        flex-grow: 3;
+        background-color: antiquewhite;
+       }
+    
+       
+    </style>
+</head>
+<body>
+    
+  
+    <main>
+        <div id="hdr_top">
+            <div id="hdr_top_left">left</div>
+            <div id="hdr_top_right">right</div>
+        </div>
+        <div id="hdr"><h2> header</h2> </div>
+        <div id="container"> 
+            
+            <div id="left">left</div>
+            <div id="centre">centre</div>
+            <div id="right">right</div>
+        </div>
+        <div id="ftr"><h2>footer bar</h2></div>
+    </main>
+    
+</body>
+</html>
